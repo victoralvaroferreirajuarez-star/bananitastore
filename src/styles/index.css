@@ -1697,9 +1697,7 @@ h4 { font-size: 1.1rem; font-weight: 600; line-height: 1.4; }
   }
 
   .hero-stats {
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
+    gap: 24px;
   }
 
   .section {
@@ -1925,42 +1923,66 @@ h4 { font-size: 1.1rem; font-weight: 600; line-height: 1.4; }
 
   /* Hero */
   .hero {
-    padding: 28px 16px;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .hero-content {
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hero h1 {
-    font-size: 1.95rem;
+    font-size: 1.75rem;
   }
 
   .hero p {
-    font-size: 1rem;
-    margin-bottom: 20px;
+    font-size: 0.92rem;
+    margin-bottom: 16px;
   }
 
   .hero-actions {
-    flex-direction: column;
+    flex-direction: row;
     align-items: stretch;
+    width: 100%;
+    gap: 8px;
   }
 
   .hero-actions .btn {
-    width: 100%;
+    flex: 1;
+    justify-content: center;
+    font-size: 0.82rem;
+    padding: 10px 8px;
   }
 
   .hero-stats {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 18px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    text-align: center;
   }
 
   .section {
     margin-bottom: 28px;
   }
 
-  .grid-4, .grid-3, .grid-2, .grid-5, .grid-6 {
+  .grid-4, .grid-5, .grid-6 {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px;
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px;
+  }
+
+  .grid-2 {
     grid-template-columns: 1fr !important;
   }
 
@@ -1969,11 +1991,11 @@ h4 { font-size: 1.1rem; font-weight: 600; line-height: 1.4; }
   }
 
   .pet-card-image {
-    height: 140px;
+    height: 120px;
   }
 
   .pet-card-image img {
-    height: 90px;
+    height: 80px;
   }
 
   .catalog-grid {
@@ -1981,11 +2003,64 @@ h4 { font-size: 1.1rem; font-weight: 600; line-height: 1.4; }
   }
 
   .catalog-item {
-    padding: 14px;
+    padding: 10px;
   }
 
   .catalog-item-name {
     min-height: auto;
+    font-size: 0.78rem;
+  }
+
+  .catalog-item-emoji img {
+    width: 44px !important;
+    height: 44px !important;
+  }
+
+  .trust-card {
+    padding: 16px 14px;
+  }
+
+  .trust-card h4 {
+    font-size: 0.82rem !important;
+  }
+
+  .trust-card p {
+    font-size: 0.72rem !important;
+  }
+
+  .trust-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .step-card {
+    padding: 20px 16px;
+  }
+
+  .step-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .step-number {
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
+  }
+
+  .section-title {
+    font-size: 1.15rem;
+  }
+
+  .section-header-glow {
+    font-size: 0.7rem;
+  }
+
+  .flex-between {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
   }
 
   .table th, .table td {
@@ -2046,9 +2121,14 @@ h4 { font-size: 1.1rem; font-weight: 600; line-height: 1.4; }
     gap: 12px;
   }
 
-  .grid-2, .grid-3, .grid-4, .grid-5, .grid-6 {
+  .grid-4, .grid-5, .grid-6 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .grid-2, .grid-3 {
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 10px;
   }
 
   .pet-card-image {
@@ -2885,6 +2965,19 @@ h4 { font-size: 1.1rem; font-weight: 600; line-height: 1.4; }
 
 @media (max-width: 768px) {
   .hero-showcase {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+  }
+  .hero-showcase-pet {
+    width: 200px;
+    height: 200px;
+  }
+  .hero-showcase-glow {
     display: none;
   }
 }
