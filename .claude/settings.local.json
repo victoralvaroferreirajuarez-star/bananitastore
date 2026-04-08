@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rtk npx:*)",
+      "Bash(npx vite:*)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(where python:*)",
+      "Bash(py --version)",
+      "Bash(npx playwright:*)",
+      "WebFetch(domain:adoptme.fandom.com)",
+      "Bash(node -e ':*)",
+      "WebFetch(domain:static.wikia.nocookie.net)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://static.wikia.nocookie.net/adoptme/images/3/35/Dog.png/revision/latest/scale-to-width-down/168?cb=20260228184731\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://static.wikia.nocookie.net/adoptme/images/7/71/Dragon_In_Game.jpg/revision/latest/scale-to-width-down/220?cb=20200426135211\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://static.wikia.nocookie.net/adoptme/images/c/c8/Unicorn_in-game.png/revision/latest/scale-to-width-down/220?cb=20260119060025\")"
+    ]
+  }
+}

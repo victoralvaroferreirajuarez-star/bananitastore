@@ -1,0 +1,2706 @@
+[
+  {
+    "name": "Scoob",
+    "rarity": "Event"
+  },
+  {
+    "name": "Pumpkin (Pet)",
+    "rarity": "Event"
+  },
+  {
+    "name": "Buffalo",
+    "rarity": "Common"
+  },
+  {
+    "name": "Cat",
+    "rarity": "Common"
+  },
+  {
+    "name": "Dog",
+    "rarity": "Common"
+  },
+  {
+    "name": "Otter",
+    "rarity": "Common"
+  },
+  {
+    "name": "Chicken",
+    "rarity": "Common"
+  },
+  {
+    "name": "Robin",
+    "rarity": "Common"
+  },
+  {
+    "name": "Bandicoot",
+    "rarity": "Common"
+  },
+  {
+    "name": "Chick",
+    "rarity": "Common"
+  },
+  {
+    "name": "Tasmanian Tiger",
+    "rarity": "Common"
+  },
+  {
+    "name": "Ground Sloth",
+    "rarity": "Common"
+  },
+  {
+    "name": "Stingray",
+    "rarity": "Common"
+  },
+  {
+    "name": "Wolpertinger",
+    "rarity": "Common"
+  },
+  {
+    "name": "Walrus",
+    "rarity": "Common"
+  },
+  {
+    "name": "Bullfrog",
+    "rarity": "Common"
+  },
+  {
+    "name": "Ant",
+    "rarity": "Common"
+  },
+  {
+    "name": "Mouse",
+    "rarity": "Common"
+  },
+  {
+    "name": "Dugong",
+    "rarity": "Common"
+  },
+  {
+    "name": "Sado Mole",
+    "rarity": "Common"
+  },
+  {
+    "name": "Bali Starling",
+    "rarity": "Common"
+  },
+  {
+    "name": "Malayan Tapir",
+    "rarity": "Common"
+  },
+  {
+    "name": "Maleo Bird",
+    "rarity": "Common"
+  },
+  {
+    "name": "Liger",
+    "rarity": "Common"
+  },
+  {
+    "name": "Mosquito",
+    "rarity": "Common"
+  },
+  {
+    "name": "Piranha",
+    "rarity": "Common"
+  },
+  {
+    "name": "Flying Fish",
+    "rarity": "Common"
+  },
+  {
+    "name": "Bluebottle Fly",
+    "rarity": "Common"
+  },
+  {
+    "name": "Mongoose",
+    "rarity": "Common"
+  },
+  {
+    "name": "Cockroach",
+    "rarity": "Common"
+  },
+  {
+    "name": "Beluga Whale",
+    "rarity": "Common"
+  },
+  {
+    "name": "Armadillo",
+    "rarity": "Common"
+  },
+  {
+    "name": "Coyote",
+    "rarity": "Common"
+  },
+  {
+    "name": "Sandfish",
+    "rarity": "Common"
+  },
+  {
+    "name": "Brachiosaurus",
+    "rarity": "Common"
+  },
+  {
+    "name": "Garden Snake",
+    "rarity": "Common"
+  },
+  {
+    "name": "Classic Teapot",
+    "rarity": "Common"
+  },
+  {
+    "name": "Kid Goat",
+    "rarity": "Common"
+  },
+  {
+    "name": "Show Pony",
+    "rarity": "Common"
+  },
+  {
+    "name": "Urchin",
+    "rarity": "Common"
+  },
+  {
+    "name": "Frankenfeline",
+    "rarity": "Common"
+  },
+  {
+    "name": "Ratatoskr",
+    "rarity": "Common"
+  },
+  {
+    "name": "Hopbop",
+    "rarity": "Common"
+  },
+  {
+    "name": "Bakeneko",
+    "rarity": "Common"
+  },
+  {
+    "name": "Burtaur",
+    "rarity": "Common"
+  },
+  {
+    "name": "Blue Butterfly",
+    "rarity": "Common"
+  },
+  {
+    "name": "Island Tarsier",
+    "rarity": "Common"
+  },
+  {
+    "name": "Tegu",
+    "rarity": "Common"
+  },
+  {
+    "name": "Aye Aye",
+    "rarity": "Common"
+  },
+  {
+    "name": "Japanese Snow Fairy",
+    "rarity": "Common"
+  },
+  {
+    "name": "California Condor",
+    "rarity": "Common"
+  },
+  {
+    "name": "Galapagos Sea Lion",
+    "rarity": "Common"
+  },
+  {
+    "name": "Jiggly Jerboa",
+    "rarity": "Common"
+  },
+  {
+    "name": "Blue Dog",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Chocolate Labrador",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Fennec Fox",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Pink Cat",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Puma",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Snow Cat",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Meerkat",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Wild Boar",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Black Panther",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Capybara",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Silly Duck",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Drake",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Wolf",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Dingo",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Pet Rock",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Triceratops",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Stegosaurus",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Glyptodon",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Bat",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Snowman",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Crab",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Dolphin",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "2021 Uplift Butterfly",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Kirin",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Halloween Black Mummy Cat",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Halloween Blue Scorpion",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Snow Leopard",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Red Cardinal",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Rock",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Camel",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Donkey",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Poodle",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "2022 Uplift Butterfly",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Rhino Beetle",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Tanuki",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Slug",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Chickatrice",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Therapy Dog",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Ermine",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Amami Rabbit",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Frogspawn",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Possum",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Yellow-lipped Sea Krait",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Banded Palm Civet",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Angler Fish",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Borhyaena Gigantica",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Lobster",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Hermit Crab",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Arctic Tern",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Warthog",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Dylan",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "River",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Pistachio",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Birthday Butterfly 2023",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Rock Pigeon",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Tawny Frogmouth",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Arctic Hare",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Harp Seal",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Eggnog Dog",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Quokka",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Gila Monster",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Rattlesnake",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Mahi Mahi",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Velociraptor",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Mole",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Rodeo Bull",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Birthday Butterfly 2024",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Black Marlin",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Dracula Fish",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Sea Skeleton Panda",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Mistletroll",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Snorgle",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Kaijunior",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Muskrat",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Hammerhead Shark",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Kelp Crewmate",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Tree Frog",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "2025 Birthday Butterfly",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Patchy Bear",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Jumping Spider",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Shih Tzu",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Humbug",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Old King Coal",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Magpie",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Black Tiger",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Kakapo",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Cocoadile",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "MFR Sandwich",
+    "rarity": "Uncommon"
+  },
+  {
+    "name": "Beaver",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Rabbit",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Elephant",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Hyena",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Bunny",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Snow Puma",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Brown Bear",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Australian Kelpie",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Cow",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Pig",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Swan",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Polar Bear",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Reindeer",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Shrew",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Rat",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Emu",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Monkey",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Rhino",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Woolly Mammoth",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Dilophosaurus",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Pterodactyl",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Musk Ox",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Lynx",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Ox",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Narwhal",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Seahorse",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Merhorse",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Sasquatch",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Halloween Evil Dachshund",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Halloween White Mummy Cat",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Husky",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Summer Walrus",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Lunar Tiger",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Abyssinian Cat",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Red Fox",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Woodpecker",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Ibex",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Orangutan",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Parakeet",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Zebra",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Yellow Butterfly",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Ibis",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Koi Carp",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Leopard Cat",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Basilisk",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Ghost Wolf",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Mule",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Irish Elk",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Shetland Pony Dark Brown",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Steppe Lion",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Bloodhound",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Black Moon Bear",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Moon Rabbit",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Feesh",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Ocelot",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Gecko",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Tarsier",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Goldfish",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Gorilla",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Hare",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Border Collie",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Goose",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Pudding Cat",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Borhyaena Gigantica",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Hippo",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Leopard Shark",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Castle Hermit Crab",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Ostrich",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Toy Poodle",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Indian Leopard",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Nutcracker Squirrel",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Eggnog Hare",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Tasmanian Devil",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Oryx",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Thorny Devil",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Ankylosaurus",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Weevil",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Blue Jay",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Cow Calf",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Orange Betta Fish",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Punk Pony",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Singularity Beetle",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Starhopper",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Singularity Pisces",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Moonlight Moth",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Sea Angel",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Marabou Stork",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Zombie Chick",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Ice Cube",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Great Pyrenees",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Winter Fawn",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Blossom Snake",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Prism Snake",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Nebula Snake",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Moonpine",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Zeopod",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Love Bird",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Sweetheart Rat",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Clover Cow",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Shiver Wolf",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Subzero Scorpion",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Kappakid",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Mecha R4BBIT",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Gibbon",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Amber Butterfly",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Emperor Shrimp",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Kelp Raider",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Wren",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Water Opossum",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Chanekeh",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Munchkin Cat",
+    "rarity": "Rare"
+  },
+  {
+    "name": "French Bulldog",
+    "rarity": "Rare"
+  },
+  {
+    "name": "The Black Dog",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Tarantula",
+    "rarity": "Rare"
+  },
+  {
+    "name": "DJ Snooze",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Turtle Doves",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Tree Sasquatch",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Angus Cow",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Samoyed",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Sneak Weasel",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Cherub Chipmunk",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Black Rhino",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Mexican Wolf",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Gummy Guana",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Milk Choccybunny",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Flamingo",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Horse",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Lion",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Red Panda",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Shiba Inu",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Penguin",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Crocodile",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Platypus",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Sloth",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Zombie Buffalo",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Bee",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Turkey",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Llama",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Arctic Fox",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Hedgehog",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Dalmatian",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Panda",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Koala",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Frog",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Ginger Cat",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Toucan",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Starfish",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Business Monkey",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Toy Monkey",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Sabertooth",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Deinonychus",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Albino Bat",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Ghost Bunny",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Yeti",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Lunar Ox",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Ladybug",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Clownfish",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Lamb",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Red Squirrel",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Hydra",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Wyvern",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Halloween White Skeleton Dog",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Puffin",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "St Bernard",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Giant Black Scarab",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Giant Blue Scarab",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Lunar White Tiger",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Pine Marten",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Salamander",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Black Springer Spaniel",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Brown Springer Spaniel",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Albatross",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Ribbon Seal",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Goat",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Space Whale",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "King Penguin",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Irish Water Spaniel",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Robot",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Swordfish",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Corgi",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Tan Chow-Chow",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Scarlet Butterfly",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Purple Butterfly",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Orange Butterfly",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Brown-Chested Pheasant",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Royal Corgi",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Royal Palace Spaniel",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Orca",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Pomeranian",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Red Crowned Crane",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Spider Crab",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Trapdoor Snail",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Evil Basilisk",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Evil Chickatrice",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Zombie Wolf",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Persian Cat",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Ram",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Shetland Pony White",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Snowball Pet",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Ice Wolf",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Gingerbread Reindeer",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Wooly Rhino",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Highland Cow",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Glacier Moth",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Water Moon Bear",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Water Rabbit",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Sheeeeep",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Green Amazon",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Chef Gorilla",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Karate Gorilla",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Binturong",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Black Macaque",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Komodo Dragon",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Red Sand Dollar",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "White Sand Dollar",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Wood Pigeon",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Sprout Snail",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Grinmoire",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Blue Ringed Octopus",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Lammergeier",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Puffer Fish",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Many Mackerel",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Tortuga de la Isla",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Lion Cub",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "African Wild Dog",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Happy Clam",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Ice Cream Hermit Crab",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Alley Cat",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Black Kite",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Seagull",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Peppermint Penguin",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Gingerbread Hare",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Snow Monkey",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Kookaburra",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Jellyfish",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Gingerbread Mouse",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Deathstalker Scorpion",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Roadrunner",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Vulture",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Fanghorn Tortoise",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Rice Cake Rabbit",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Burning Bunny",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Flaming Fox",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Wildfire Hawk",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Ornate Horned Frog",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Gold Mahi Mahi",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Nautilus",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Hamster",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Candy Cane Snail",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Inmate Capuchin Monkey (Pet)",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Preppy Capuchin Monkey (Pet)",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Elasmosaurus",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Praying Mantis",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Skunk",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Mini Pig",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Pink Betta Fish",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Pretty Pony",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Bald Eagle",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Peregrine Falcon",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Hummingbird",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Lionfish",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Honey Badger",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Indian Flying Fox",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Pumpkin Friend",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Ghost Chick",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Headless Horse",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Golden Jaguar",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Grave Owl",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Bauble Buddies",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Cold Cube",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Partridge",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Merry Mistletroll",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Winter Doe",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Mr. Whiskerpips",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Frostbite Cub",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Puptune",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Starmite",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Gaelic Fae",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Frozen Penguin",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Icy Porcupine",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Snowy Mammoth",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Tri-horned Treehopper",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Kage Crow",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Toxic Kaijunior",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Cabbit",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Mirai Moth",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Firefighter Gibbon",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Officer Gibbon",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Ringmaster Gibbon",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Momma Moose",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Seafoam Butterfly",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Vermilion Butterfly",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Seabed Creeper",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Kelp Hunter",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Sea Slug",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Manta Ray",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Onza",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Ehecatl",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Mini Schnauzer",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Siamese Cat",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Skelebat",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Chilling Spider",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Ghostly Cat",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Choco Penguin",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Mrs. Whiskerpips",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Maine Coon",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Snowball Pug",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Angus Calf",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Cozy Mistletroll",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Bunny Swirl",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Clementine Owl",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "German Shepherd",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Fire Foal",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Dire Wolf",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Black-Footed Ferret",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Pangolin",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Gumball Caterpillar",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Waffle Wyrm",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "White Choccybunny",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Pupcake",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Chocolate Dutch Guinea Pig",
+    "rarity": "Ultra-Rare"
+  },
+  {
+    "name": "Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Giraffe",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Griffin",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Unicorn",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Golden Penguin",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Parrot",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Shadow Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Bat Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "King Bee",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Queen Bee",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Owl",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Crow",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Frost Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Arctic Reindeer",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Turtle",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Kangaroo",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Golden Unicorn",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Golden Griffin",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Golden Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Diamond Unicorn",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Diamond Griffin",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Diamond Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Albino Monkey",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Monkey King",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Ninja Monkey",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Kitsune",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Evil Unicorn",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Golden Rat",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Dodo",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "T-Rex",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Skele-Rex",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Cerberus",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Robo Dog",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Snow Owl",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Frost Fury",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Guardian Lion",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Metal Ox",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Golden Ladybug",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Diamond Ladybug",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Peacock",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Octopus",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Shark",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Cobra",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Goldhorn",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Phoenix",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Axolotl",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Halloween Golden Mummy Cat",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Halloween White Ghost Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Golden Walrus",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Ice Golem",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Giant Gold Scarab",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Lunar Gold Tiger",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Dancing Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Sugar Glider",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Lavender Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Fallow Deer",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Hawk",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Mechapup",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Golden Albatross",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Diamond Albatross",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Winged Horse",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Zodiac Minion Chick",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Capricorn",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Diamond King Penguin",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Golden King Penguin",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Alicorn",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Ancient Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Dragonfly",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Black Chow-Chow",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Chocolate Chow-Chow",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Golden Chow-Chow",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Green Butterfly",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Diamond Butterfly",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Black-Chested Pheasant",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Green-Chested Pheasant",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Baku",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Maneki-Neko",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Chimera",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Lava Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Lava Wolf",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Jousting Horse",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Undead Jousting Horse",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Ice Moth Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Strawberry Shortcake Bat Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Shetland Pony Light Brown",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Nessie",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Lunar Moon Bear",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Winged Tiger",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "White Amazon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Diamond Amazon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Firefly",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Frost Unicorn",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Albino Gorilla",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Astronaut Gorilla",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Emperor Gorilla",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Field Mouse",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Naga Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Tree Kangaroo",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Yule Log Dog",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Tió De Nadal",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Cuddly Candle",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Caelum Cervi",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Owlbear",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Spinosaurus",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Shark Puppy",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Hot Doggo",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Leviathan",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Pirate Hermit Crab",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Billy Goat",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Gargoyle",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Chocolate Chip Bat Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Fleur De Ice",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Candy Hare",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Glacier Kitsune",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Cactus Friend",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Criosphinx",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Rainbow Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Midnight Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Volcanic Rhino",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Diamond Mahi Mahi",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Golden Hamster",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Diamond Hamster",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Candyfloss Chick",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Princess Capuchin Monkey (Pet)",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Pirate Ghost Capuchin Monkey (Pet)",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Royal Capuchin Monkey",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Dimorphodon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Golden Tortoise Beetle",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Rosy Maple Moth",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Mushroom Friend",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Blue Betta Fish",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Majestic Pony",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Corn Doggo",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Balloon Unicorn",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Cheetah",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Bush Elephant",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Glormy Hound",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Glormy Leo",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Golden Hummingbird",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Diamond Hummingbird",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Kraken",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Grim Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Scarebear",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Dracula Parrot",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Evil Chick",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Jekyll Hydra",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Sugar Axolotl",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Hippogriff",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Fairy Bat Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Berry Cool Cube",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Naughty Mistletroll",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Royal Mistletroll",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Frostclaw",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Winter Buck",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Aurora Fox",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Gilded Snake",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Haetae",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Dimension Drifter",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Sunglider",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Cupid Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Frostbite Bear",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Sakura Spirit",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Super Saru",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Primal Kaijunior",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Scorching Kaijunior",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Glormy Dolphin",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Hero Gibbon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Influencer Gibbon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Villain Gibbon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Moose Calf",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Papa Moose",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Violet Butterfly",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Orchid Butterfly",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Prismatic Butterfly",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Moonbeam Butterfly",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Mermicorn",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Coconut Friend",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Priceless Shrimp",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Kelp Captain",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Temple Friend",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Quetzalcoatl",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Giant Panda",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Emberlight",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Phantom Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Kitty Bat",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Black Widow",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Slimingo",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Cryptid",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Dango Penguins",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Vanilla Penguin",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Strawberry Penguin",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Arctic Dusk Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Christmas Spirit",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Angus Bull",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Frost Phoenix",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "2D Kitty",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Dragonfruit Fox",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Apple Owl",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Peach Owl",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Pineapple Owl",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Rose Dragon",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Fire Stallion",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Fire Mare",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Silverback Gorilla",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Blue Whale",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Sea Turtle",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Velocirooster",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Candicorn",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Mochi Meow",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Latte Kitsune",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Dark Choccybunny",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Easter Bunny",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Red Dutch Guinea Pig",
+    "rarity": "Legendary"
+  },
+  {
+    "name": "Tortoiseshell Guinea Pig",
+    "rarity": "Legendary"
+  }
+]
