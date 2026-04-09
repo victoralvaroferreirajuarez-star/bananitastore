@@ -27,7 +27,7 @@ export const Storage = {
         {
           id: 'admin_001',
           username: 'Admin',
-          email: 'admin@bananastore.gg',
+          email: 'admin@bananitashop.com',
           password: 'admin123',
           role: 'admin',
           avatar: 'A',
@@ -42,7 +42,7 @@ export const Storage = {
     if (!this.get('support_tickets')) this.set('support_tickets', []);
     if (!this.get('site_config')) {
       this.set('site_config', {
-        siteName: 'BananaStore.gg',
+        siteName: 'BananitaShop',
         commission: 0,
         maintenanceMode: false,
         announcement: ''

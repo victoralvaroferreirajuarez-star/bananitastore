@@ -11,9 +11,9 @@ export function renderRegister() {
     <div class="auth-container animate-fade-up">
       <div class="auth-card">
         <div class="auth-logo">
-          <img src="/logo.png" alt="BananaStore">
+          <img src="/logo.png" alt="BananitaShop">
           <h2>Crear cuenta</h2>
-          <p>Únete a BananaStore.gg</p>
+          <p>Únete a BananitaShop</p>
         </div>
 
         <form id="register-form" onsubmit="return false">

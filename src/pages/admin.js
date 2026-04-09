@@ -25,7 +25,7 @@ export function renderAdmin() {
       <div class="flex-between mb-24">
         <div>
           <h1 style="font-size:1.8rem">Panel de Administración</h1>
-          <p class="text-sm text-muted">Control total de BananaStore.gg</p>
+          <p class="text-sm text-muted">Control total de BananitaShop</p>
         </div>
       </div>
 
@@ -229,7 +229,7 @@ export function renderAdmin() {
             <form id="config-form" onsubmit="return false">
               <div class="form-group">
                 <label class="form-label">Nombre del sitio</label>
-                <input type="text" class="form-input" id="cfg-name" value="${config.siteName || 'BananaStore.gg'}">
+                <input type="text" class="form-input" id="cfg-name" value="${config.siteName || 'BananitaShop'}">
               </div>
               <div class="form-group">
                 <label class="form-label">Comisión (%)</label>

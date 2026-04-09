@@ -235,7 +235,7 @@ function renderPinScreen() {
   return `
     <div class="pin-container animate-fade-up">
       <div style="text-align:center">
-        <img src="/logo.png" alt="BananaStore" style="height:56px;margin:0 auto 16px">
+        <img src="/logo.png" alt="BananitaShop" style="height:56px;margin:0 auto 16px">
         <h2>Panel de Vendedor</h2>
         <p class="text-muted text-sm mb-8">Introduce tu PIN de 6 dígitos para acceder</p>
       </div>

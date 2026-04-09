@@ -9,8 +9,8 @@ export function renderFooter() {
         <div class="footer-grid">
           <div>
             <div class="footer-brand">
-              <img src="/logo.png" alt="BananaStore">
-              <span>BananaStore.gg</span>
+              <img src="/logo.png" alt="BananitaShop">
+              <span>BananitaShop</span>
             </div>
             <p class="footer-desc">
               La plataforma mas segura para comprar y vender pets de Adopt Me.
@@ -48,7 +48,7 @@ export function renderFooter() {
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; ${new Date().getFullYear()} BananaStore.gg &mdash; Todos los derechos reservados. No afiliado con Uplift Games LLC ni Roblox Corporation.</p>
+          <p>&copy; ${new Date().getFullYear()} BananitaShop &mdash; Todos los derechos reservados. No afiliado con Uplift Games LLC ni Roblox Corporation.</p>
         </div>
       </div>
     </footer>

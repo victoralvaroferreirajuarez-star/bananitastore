@@ -11,7 +11,7 @@ export function renderLogin() {
     <div class="auth-container animate-fade-up">
       <div class="auth-card">
         <div class="auth-logo">
-          <img src="/logo.png" alt="BananaStore">
+          <img src="/logo.png" alt="BananitaShop">
           <h2>Bienvenido de vuelta</h2>
           <p>Inicia sesión en tu cuenta</p>
         </div>

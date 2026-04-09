@@ -1,5 +1,5 @@
 // ========================================
-// BananaStore.gg — Main Entry
+// BananitaShop — Main Entry
 // ========================================
 
 import './styles/index.css';
@@ -97,8 +97,8 @@ function renderPage(pageRenderer, params) {
       <nav class="navbar">
         <div class="navbar-inner">
           <a class="navbar-brand" onclick="window.location.hash='/'">
-            <img src="/logo.png" alt="BananaStore">
-            <span>BananaStore.gg</span>
+            <img src="/logo.png" alt="BananitaShop">
+            <span>BananitaShop</span>
           </a>
         </div>
       </nav>

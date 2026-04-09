@@ -24,8 +24,8 @@ export function renderNavbar() {
     <nav class="navbar" id="main-navbar">
       <div class="navbar-inner">
         <a class="navbar-brand" onclick="window.location.hash='/'">
-          <img src="/logo.png" alt="BananaStore">
-          <span>BananaStore<span style="-webkit-text-fill-color:var(--text-secondary);font-weight:400;font-size:0.85em">.gg</span></span>
+          <img src="/logo.png" alt="BananitaShop">
+          <span>BananitaShop</span>
         </a>
 
         <div class="navbar-links" id="nav-links">
