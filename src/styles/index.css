@@ -576,6 +576,7 @@ h4 { font-size: 1.1rem; font-weight: 600; line-height: 1.4; }
 }
 
 .navbar-brand span {
+  margin-left: -6px;
   background: linear-gradient(135deg, var(--banana-yellow), #ffe066);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
