@@ -505,14 +505,22 @@ h4 { font-size: 1.1rem; font-weight: 600; line-height: 1.4; }
    Navbar
    ======================================== */
 .navbar {
-  background: rgba(13, 15, 26, 0.8);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
+  background: rgba(13, 15, 26, 0.95);
   border-bottom: 1px solid var(--border-light);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 9999;
   height: 72px;
+}
+
+@supports (backdrop-filter: blur(24px)) {
+  @media (min-width: 769px) {
+    .navbar {
+      background: rgba(13, 15, 26, 0.8);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+    }
+  }
 }
 
 .navbar::after {
@@ -706,9 +714,10 @@ h4 { font-size: 1.1rem; font-weight: 600; line-height: 1.4; }
 @media (max-width: 768px) {
   .nav-toggle { display: flex; }
   .navbar-inner {
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     padding: 0 16px;
+    flex-wrap: nowrap;
   }
   .navbar-links {
     position: fixed;
@@ -717,11 +726,11 @@ h4 { font-size: 1.1rem; font-weight: 600; line-height: 1.4; }
     backdrop-filter: blur(20px);
     flex-direction: column;
     padding: 18px 16px 20px;
-    gap: 10px;
+    gap: 6px;
     transform: translateX(-100%);
     transition: transform var(--transition-smooth);
-    z-index: 99;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    z-index: 9999;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
     overflow-y: auto;
   }
   .navbar-links.open {
@@ -734,13 +743,18 @@ h4 { font-size: 1.1rem; font-weight: 600; line-height: 1.4; }
     border-radius: var(--radius-md);
   }
   .navbar-actions {
-    width: 100%;
-    justify-content: space-between;
+    width: auto;
+    gap: 6px;
+  }
+  /* Hide login/register buttons in the top bar on mobile - they go in the menu */
+  .navbar-actions > .btn {
+    display: none;
   }
   .navbar-user {
-    width: 100%;
-    justify-content: space-between;
-    padding: 10px 14px;
+    padding: 0;
+  }
+  .navbar-user .navbar-username {
+    display: none;
   }
   .navbar-dropdown {
     position: static;
@@ -754,9 +768,24 @@ h4 { font-size: 1.1rem; font-weight: 600; line-height: 1.4; }
     opacity: 1;
     visibility: visible;
   }
-  .navbar-user .navbar-username {
-    display: none;
+  .mobile-auth-btns {
+    display: flex !important;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-light);
   }
+  .mobile-auth-btns .btn {
+    display: flex !important;
+    justify-content: center;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+  }
+}
+
+.mobile-auth-btns {
+  display: none;
 }
 
 /* ========================================

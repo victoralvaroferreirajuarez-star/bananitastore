@@ -36,6 +36,16 @@ export function renderNavbar() {
               ${link.label}
             </a>
           `).join('')}
+          ${!user ? `
+            <div class="mobile-auth-btns">
+              <button class="btn btn-ghost w-full" onclick="window.closeMobileNav();window.location.hash='/login'">
+                <i class="ri ri-login-box-line"></i> Iniciar Sesion
+              </button>
+              <button class="btn btn-primary w-full" onclick="window.closeMobileNav();window.location.hash='/register'">
+                Registrarse
+              </button>
+            </div>
+          ` : ''}
         </div>
 
         <div class="navbar-actions">
