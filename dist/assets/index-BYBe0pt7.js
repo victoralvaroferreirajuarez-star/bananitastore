@@ -1,9 +1,9 @@
-(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const n of document.querySelectorAll('link[rel="modulepreload"]'))o(n);new MutationObserver(n=>{for(const l of n)if(l.type==="childList")for(const t of l.addedNodes)t.tagName==="LINK"&&t.rel==="modulepreload"&&o(t)}).observe(document,{childList:!0,subtree:!0});function a(n){const l={};return n.integrity&&(l.integrity=n.integrity),n.referrerPolicy&&(l.referrerPolicy=n.referrerPolicy),n.crossOrigin==="use-credentials"?l.credentials="include":n.crossOrigin==="anonymous"?l.credentials="omit":l.credentials="same-origin",l}function o(n){if(n.ep)return;n.ep=!0;const l=a(n);fetch(n.href,l)}})();const Z="bs_",h={get(e){try{const i=localStorage.getItem(Z+e);return i?JSON.parse(i):null}catch{return null}},set(e,i){localStorage.setItem(Z+e,JSON.stringify(i))},remove(e){localStorage.removeItem(Z+e)},init(){this.get("users")||this.set("users",[{id:"admin_001",username:"Admin",email:"admin@bananastore.gg",password:"admin123",role:"admin",avatar:"A",createdAt:new Date().toISOString(),banned:!1}]),this.get("listings")||this.set("listings",[]),this.get("orders")||this.set("orders",[]),this.get("seller_requests")||this.set("seller_requests",[]),this.get("support_tickets")||this.set("support_tickets",[]),this.get("site_config")||this.set("site_config",{siteName:"BananaStore.gg",commission:0,maintenanceMode:!1,announcement:""})}};function C(){return h.get("users")||[]}function oe(e){h.set("users",e)}function G(e){return C().find(i=>i.id===e)}function ye(e,i){const a=C(),o=a.findIndex(n=>n.id===e);return o!==-1&&(a[o]={...a[o],...i},oe(a)),a[o]}function k(){return h.get("listings")||[]}function j(e){h.set("listings",e)}function we(e){const i=k();i.push(e),j(i)}function ke(e){j(k().filter(i=>i.id!==e))}function ae(e){return k().find(i=>i.id===e)}function Me(e,i){const a=k(),o=a.findIndex(n=>n.id===e);o!==-1&&(a[o]={...a[o],...i},j(a))}function S(){return h.get("orders")||[]}function ue(e){h.set("orders",e)}function xe(e){const i=S();i.push(e),ue(i)}function Y(e,i){const a=S(),o=a.findIndex(n=>n.id===e);o!==-1&&(a[o]={...a[o],...i},ue(a))}function L(){return h.get("seller_requests")||[]}function X(e){h.set("seller_requests",e)}function Ce(e){const i=L();i.push(e),X(i)}function Re(){return h.get("support_tickets")||[]}function _e(e){h.set("support_tickets",e)}function Se(e){const i=Re();i.push(e),_e(i)}function Be(){return h.get("site_config")||{}}function Ee(e){h.set("site_config",e)}function ie(e){return h.get(`favorites_${e}`)||[]}function De(e,i){let a=ie(e);return a.includes(i)?a=a.filter(o=>o!==i):a.push(i),h.set(`favorites_${e}`,a),a}const D={};function P(e,i){D[e]=i}function u(e){const i="#"+e;window.location.hash===i?window.dispatchEvent(new HashChangeEvent("hashchange")):window.location.hash=e}function ne(){return window.location.hash.slice(1)||"/"}function Ge(e){function i(){const a=ne(),[o,...n]=a.split("/").filter(Boolean),l="/"+(o||"");if(D[l])e(D[l],n);else{const t=Object.keys(D).find(p=>{if(!p.includes(":"))return!1;const r=p.split("/").filter(Boolean),y=a.split("/").filter(Boolean);return r.length!==y.length?!1:r.every((g,d)=>g.startsWith(":")||g===y[d])});if(t){const p=t.split("/").filter(Boolean),r=a.split("/").filter(Boolean),y=[];p.forEach((g,d)=>{g.startsWith(":")&&y.push(r[d])}),e(D[t],y)}else e(D["/"]||(()=>"<h1>404</h1>"),[])}}window.addEventListener("hashchange",i),i()}function v(){const e=sessionStorage.getItem("bs_session");return e&&C().find(i=>i.id===e)||null}function $(){const e=v();return e&&e.role==="admin"}function $e(){const e=v();return e&&(e.role==="seller"||e.role==="admin")}function Ie(e,i){const a=C(),o=e.trim().toLowerCase(),n=a.find(l=>l.email.toLowerCase()===o&&l.password===i);return n?n.banned?{success:!1,message:"Tu cuenta ha sido suspendida"}:(sessionStorage.setItem("bs_session",n.id),{success:!0,user:n}):{success:!1,message:"Email o contraseña incorrectos"}}function Fe(e,i,a){const o=C(),n=i.trim().toLowerCase();if(o.find(t=>t.email.toLowerCase()===n))return{success:!1,message:"Ya existe una cuenta con ese email"};if(o.find(t=>t.username.toLowerCase()===e.toLowerCase()))return{success:!1,message:"Ese nombre de usuario ya está en uso"};const l={id:"user_"+Date.now(),username:e,email:n,password:a,role:"buyer",avatar:e.charAt(0).toUpperCase(),createdAt:new Date().toISOString(),banned:!1,paypalEmail:"",sellerPin:"",sellerApproved:!1,bio:""};return o.push(l),oe(o),sessionStorage.setItem("bs_session",l.id),{success:!0,user:l}}function Le(){sessionStorage.removeItem("bs_session")}function Q(e){const i=v();if(!i)return!1;const a=C(),o=a.findIndex(n=>n.id===i.id);return o!==-1?(a[o]={...a[o],...e},oe(a),!0):!1}function Ae(e){const i=v();return i&&i.sellerPin===e}window.closeMobileNav=()=>{const e=document.getElementById("nav-links");e==null||e.classList.remove("open")};function Te(){const e=v(),i=ne();return`
+(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const n of document.querySelectorAll('link[rel="modulepreload"]'))o(n);new MutationObserver(n=>{for(const l of n)if(l.type==="childList")for(const t of l.addedNodes)t.tagName==="LINK"&&t.rel==="modulepreload"&&o(t)}).observe(document,{childList:!0,subtree:!0});function a(n){const l={};return n.integrity&&(l.integrity=n.integrity),n.referrerPolicy&&(l.referrerPolicy=n.referrerPolicy),n.crossOrigin==="use-credentials"?l.credentials="include":n.crossOrigin==="anonymous"?l.credentials="omit":l.credentials="same-origin",l}function o(n){if(n.ep)return;n.ep=!0;const l=a(n);fetch(n.href,l)}})();const Z="bs_",h={get(e){try{const i=localStorage.getItem(Z+e);return i?JSON.parse(i):null}catch{return null}},set(e,i){localStorage.setItem(Z+e,JSON.stringify(i))},remove(e){localStorage.removeItem(Z+e)},init(){this.get("users")||this.set("users",[{id:"admin_001",username:"Admin",email:"admin@bananitashop.com",password:"admin123",role:"admin",avatar:"A",createdAt:new Date().toISOString(),banned:!1}]),this.get("listings")||this.set("listings",[]),this.get("orders")||this.set("orders",[]),this.get("seller_requests")||this.set("seller_requests",[]),this.get("support_tickets")||this.set("support_tickets",[]),this.get("site_config")||this.set("site_config",{siteName:"BananitaShop",commission:0,maintenanceMode:!1,announcement:""})}};function C(){return h.get("users")||[]}function oe(e){h.set("users",e)}function $(e){return C().find(i=>i.id===e)}function ye(e,i){const a=C(),o=a.findIndex(n=>n.id===e);return o!==-1&&(a[o]={...a[o],...i},oe(a)),a[o]}function k(){return h.get("listings")||[]}function j(e){h.set("listings",e)}function we(e){const i=k();i.push(e),j(i)}function ke(e){j(k().filter(i=>i.id!==e))}function ae(e){return k().find(i=>i.id===e)}function Me(e,i){const a=k(),o=a.findIndex(n=>n.id===e);o!==-1&&(a[o]={...a[o],...i},j(a))}function B(){return h.get("orders")||[]}function ue(e){h.set("orders",e)}function xe(e){const i=B();i.push(e),ue(i)}function Y(e,i){const a=B(),o=a.findIndex(n=>n.id===e);o!==-1&&(a[o]={...a[o],...i},ue(a))}function L(){return h.get("seller_requests")||[]}function X(e){h.set("seller_requests",e)}function Ce(e){const i=L();i.push(e),X(i)}function Re(){return h.get("support_tickets")||[]}function _e(e){h.set("support_tickets",e)}function Se(e){const i=Re();i.push(e),_e(i)}function Be(){return h.get("site_config")||{}}function Ee(e){h.set("site_config",e)}function ie(e){return h.get(`favorites_${e}`)||[]}function De(e,i){let a=ie(e);return a.includes(i)?a=a.filter(o=>o!==i):a.push(i),h.set(`favorites_${e}`,a),a}const G={};function P(e,i){G[e]=i}function u(e){const i="#"+e;window.location.hash===i?window.dispatchEvent(new HashChangeEvent("hashchange")):window.location.hash=e}function ne(){return window.location.hash.slice(1)||"/"}function Ge(e){function i(){const a=ne(),[o,...n]=a.split("/").filter(Boolean),l="/"+(o||"");if(G[l])e(G[l],n);else{const t=Object.keys(G).find(p=>{if(!p.includes(":"))return!1;const r=p.split("/").filter(Boolean),y=a.split("/").filter(Boolean);return r.length!==y.length?!1:r.every((g,d)=>g.startsWith(":")||g===y[d])});if(t){const p=t.split("/").filter(Boolean),r=a.split("/").filter(Boolean),y=[];p.forEach((g,d)=>{g.startsWith(":")&&y.push(r[d])}),e(G[t],y)}else e(G["/"]||(()=>"<h1>404</h1>"),[])}}window.addEventListener("hashchange",i),i()}function v(){const e=localStorage.getItem("bs_session");return e&&C().find(i=>i.id===e)||null}function S(){const e=v();return e&&e.role==="admin"}function $e(){const e=v();return e&&(e.role==="seller"||e.role==="admin")}function Ie(e,i){const a=C(),o=e.trim().toLowerCase(),n=a.find(l=>l.email.toLowerCase()===o&&l.password===i);return n?n.banned?{success:!1,message:"Tu cuenta ha sido suspendida"}:(localStorage.setItem("bs_session",n.id),{success:!0,user:n}):{success:!1,message:"Email o contraseña incorrectos"}}function Fe(e,i,a){const o=C(),n=i.trim().toLowerCase();if(o.find(t=>t.email.toLowerCase()===n))return{success:!1,message:"Ya existe una cuenta con ese email"};if(o.find(t=>t.username.toLowerCase()===e.toLowerCase()))return{success:!1,message:"Ese nombre de usuario ya está en uso"};const l={id:"user_"+Date.now(),username:e,email:n,password:a,role:"buyer",avatar:e.charAt(0).toUpperCase(),createdAt:new Date().toISOString(),banned:!1,paypalEmail:"",sellerPin:"",sellerApproved:!1,bio:""};return o.push(l),oe(o),localStorage.setItem("bs_session",l.id),{success:!0,user:l}}function Le(){localStorage.removeItem("bs_session")}function Q(e){const i=v();if(!i)return!1;const a=C(),o=a.findIndex(n=>n.id===i.id);return o!==-1?(a[o]={...a[o],...e},oe(a),!0):!1}function Ae(e){const i=v();return i&&i.sellerPin===e}window.closeMobileNav=()=>{const e=document.getElementById("nav-links");e==null||e.classList.remove("open")};function Te(){const e=v(),i=ne();return`
     <nav class="navbar" id="main-navbar">
       <div class="navbar-inner">
         <a class="navbar-brand" onclick="window.location.hash='/'">
-          <img src="/logo.png" alt="BananaStore">
-          <span>BananaStore<span style="-webkit-text-fill-color:var(--text-secondary);font-weight:400;font-size:0.85em">.gg</span></span>
+          <img src="/logo.png" alt="BananitaShop">
+          <span>BananitaShop</span>
         </a>
 
         <div class="navbar-links" id="nav-links">
@@ -14,11 +14,52 @@
               ${o.label}
             </a>
           `).join("")}
+          ${e?`
+            <div class="mobile-user-menu">
+              <div class="mobile-user-header">
+                <div class="navbar-avatar">${e.avatar||e.username.charAt(0).toUpperCase()}</div>
+                <span>${e.username}</span>
+              </div>
+              <div class="dropdown-item" onclick="window.closeMobileNav();window.location.hash='/profile'">
+                <i class="ri ri-user-line"></i> Mi Perfil
+              </div>
+              ${e.role==="seller"||e.role==="both"||e.role==="admin"?`
+                <div class="dropdown-item" onclick="window.closeMobileNav();window.location.hash='/seller'">
+                  <i class="ri ri-store-line"></i> Panel Vendedor
+                </div>
+              `:""}
+              <div class="dropdown-item" onclick="window.closeMobileNav();window.location.hash='/orders'">
+                <i class="ri ri-shopping-bag-line"></i> Mis Pedidos
+              </div>
+              <div class="dropdown-item" onclick="window.closeMobileNav();window.location.hash='/favorites'">
+                <i class="ri ri-heart-line"></i> Favoritos
+              </div>
+              ${S()?`
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item" onclick="window.closeMobileNav();window.location.hash='/admin'">
+                  <i class="ri ri-settings-3-line"></i> Admin Panel
+                </div>
+              `:""}
+              <div class="dropdown-divider"></div>
+              <div class="dropdown-item danger" onclick="window.closeMobileNav();window.BS_LOGOUT()">
+                <i class="ri ri-logout-box-line"></i> Cerrar Sesion
+              </div>
+            </div>
+          `:`
+            <div class="mobile-auth-btns">
+              <button class="btn btn-ghost w-full" onclick="window.closeMobileNav();window.location.hash='/login'">
+                <i class="ri ri-login-box-line"></i> Iniciar Sesion
+              </button>
+              <button class="btn btn-primary w-full" onclick="window.closeMobileNav();window.location.hash='/register'">
+                Registrarse
+              </button>
+            </div>
+          `}
         </div>
 
         <div class="navbar-actions">
           ${e?`
-            <div class="navbar-user" id="nav-user-btn" onclick="document.getElementById('nav-dropdown').classList.toggle('show')">
+            <div class="navbar-user" id="nav-user-btn" onclick="window.innerWidth<=768?document.getElementById('nav-links').classList.toggle('open'):document.getElementById('nav-dropdown').classList.toggle('show')">
               <div class="navbar-avatar">${e.avatar||e.username.charAt(0).toUpperCase()}</div>
               <span class="navbar-username">${e.username}</span>
               <div class="navbar-dropdown" id="nav-dropdown">
@@ -36,7 +77,7 @@
                 <div class="dropdown-item" onclick="event.stopPropagation();window.location.hash='/favorites'">
                   <i class="ri ri-heart-line"></i> Favoritos
                 </div>
-                ${$()?`
+                ${S()?`
                   <div class="dropdown-divider"></div>
                   <div class="dropdown-item" onclick="event.stopPropagation();window.location.hash='/admin'">
                     <i class="ri ri-settings-3-line"></i> Admin Panel
@@ -68,8 +109,8 @@
         <div class="footer-grid">
           <div>
             <div class="footer-brand">
-              <img src="/logo.png" alt="BananaStore">
-              <span>BananaStore.gg</span>
+              <img src="/logo.png" alt="BananitaShop">
+              <span>BananitaShop</span>
             </div>
             <p class="footer-desc">
               La plataforma mas segura para comprar y vender pets de Adopt Me.
@@ -107,7 +148,7 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; ${new Date().getFullYear()} BananaStore.gg &mdash; Todos los derechos reservados. No afiliado con Uplift Games LLC ni Roblox Corporation.</p>
+          <p>&copy; ${new Date().getFullYear()} BananitaShop &mdash; Todos los derechos reservados. No afiliado con Uplift Games LLC ni Roblox Corporation.</p>
         </div>
       </div>
     </footer>
@@ -163,7 +204,7 @@
         </div>
       </div>
     </div>
-  `:`<div class="pet-selection-summary is-empty">${i}</div>`}let E=null;function re(e){const i=f.find(t=>t.id===e.petId),a=i&&i.image?i.image:"",o=[];e.isFly&&o.push('<span class="badge badge-fly">F</span>'),e.isRide&&o.push('<span class="badge badge-ride">R</span>'),e.isNeon&&o.push('<span class="badge badge-neon">Neon</span>'),e.isMega&&o.push('<span class="badge badge-mega">Mega</span>');const n=G(e.sellerId),l=i?M(i.rarity):"badge-common";return`
+  `:`<div class="pet-selection-summary is-empty">${i}</div>`}let D=null;function re(e){const i=f.find(t=>t.id===e.petId),a=i&&i.image?i.image:"",o=[];e.isFly&&o.push('<span class="badge badge-fly">F</span>'),e.isRide&&o.push('<span class="badge badge-ride">R</span>'),e.isNeon&&o.push('<span class="badge badge-neon">Neon</span>'),e.isMega&&o.push('<span class="badge badge-mega">Mega</span>');const n=$(e.sellerId),l=i?M(i.rarity):"badge-common";return`
     <div class="pet-card" onclick="window.location.hash='/pet/${e.id}'">
       <div class="pet-card-image">
         <div class="pet-card-badges">
@@ -248,12 +289,12 @@
         `}
       </div>
     </div>
-  `}function It(){var y,g;const e=document.getElementById("market-search"),i=document.getElementById("rarity-filters"),a=document.getElementById("type-filters"),o=document.getElementById("market-results");if(!e||!o)return;let n="all",l="all",t="";function p(){const d=document.getElementById("market-selected-pet");if(!d)return;const s=f.find(c=>c.id===E)||null;d.innerHTML=Ne(s,"Filtro por pet: todos los pets")}function r(){let d=k().filter(s=>s.status==="active");if(t){const s=t.toLowerCase();d=d.filter(c=>c.petName.toLowerCase().includes(s)||c.rarity&&c.rarity.toLowerCase().includes(s))}n!=="all"&&(d=d.filter(s=>s.rarity===n)),E&&(d=d.filter(s=>s.petId===E)),l!=="all"&&(l==="fly"&&(d=d.filter(s=>s.isFly)),l==="ride"&&(d=d.filter(s=>s.isRide)),l==="neon"&&(d=d.filter(s=>s.isNeon)),l==="mega"&&(d=d.filter(s=>s.isMega))),d.length===0?o.innerHTML=`
+  `}function It(){var y,g;const e=document.getElementById("market-search"),i=document.getElementById("rarity-filters"),a=document.getElementById("type-filters"),o=document.getElementById("market-results");if(!e||!o)return;let n="all",l="all",t="";function p(){const d=document.getElementById("market-selected-pet");if(!d)return;const s=f.find(c=>c.id===D)||null;d.innerHTML=Ne(s,"Filtro por pet: todos los pets")}function r(){let d=k().filter(s=>s.status==="active");if(t){const s=t.toLowerCase();d=d.filter(c=>c.petName.toLowerCase().includes(s)||c.rarity&&c.rarity.toLowerCase().includes(s))}n!=="all"&&(d=d.filter(s=>s.rarity===n)),D&&(d=d.filter(s=>s.petId===D)),l!=="all"&&(l==="fly"&&(d=d.filter(s=>s.isFly)),l==="ride"&&(d=d.filter(s=>s.isRide)),l==="neon"&&(d=d.filter(s=>s.isNeon)),l==="mega"&&(d=d.filter(s=>s.isMega))),d.length===0?o.innerHTML=`
         <div class="empty-state" style="grid-column:1/-1">
           <h3>No se encontraron resultados</h3>
           <p>Intenta con otros filtros o términos de búsqueda</p>
         </div>
-      `:o.innerHTML=d.map(s=>re(s)).join("")}e.addEventListener("input",d=>{t=d.target.value,r()}),(y=document.getElementById("market-pet-picker-btn"))==null||y.addEventListener("click",()=>{W({title:"Buscar pet para comprar",selectedPetId:E,onSelect:d=>{E=d.id,p(),r()}})}),(g=document.getElementById("market-pet-clear-btn"))==null||g.addEventListener("click",()=>{E=null,p(),r()}),i.addEventListener("click",d=>{const s=d.target.closest(".filter-pill");s&&(i.querySelectorAll(".filter-pill").forEach(c=>c.classList.remove("active")),s.classList.add("active"),n=s.dataset.rarity,r())}),a.addEventListener("click",d=>{const s=d.target.closest(".filter-pill");s&&(a.querySelectorAll(".filter-pill").forEach(c=>c.classList.remove("active")),s.classList.add("active"),l=s.dataset.type,r())}),p()}const O=[{name:"Dog",fallback:"https://static.wikia.nocookie.net/adoptme/images/3/35/Dog.png/revision/latest/scale-to-width-down/168?cb=20260228184731"},{name:"Dragon",fallback:"https://static.wikia.nocookie.net/adoptme/images/3/3c/Dragon_Pet.png/revision/latest?cb=20210726173407"},{name:"Unicorn",fallback:"https://static.wikia.nocookie.net/adoptme/images/1/1f/Unicorn_Pet.png/revision/latest?cb=20250209082117"},{name:"Turtle",fallback:"https://static.wikia.nocookie.net/adoptme/images/3/3f/Turtle_In-game..png/revision/latest?cb=20210617223738"},{name:"Frost Dragon",fallback:"https://static.wikia.nocookie.net/adoptme/images/f/fd/Frost_Dragon_Pet.png/revision/latest?cb=20200116000126"},{name:"Shadow Dragon",fallback:"https://static.wikia.nocookie.net/adoptme/images/8/80/Shadow_Dragon_Gamepass_AM.png/revision/latest?cb=20201205093105"}].map(e=>{const i=f.find(a=>a.name===e.name);return{name:e.name,image:(i==null?void 0:i.image)||e.fallback}});function Ft(){const e=k().filter(o=>o.status==="active").slice(0,8),i=v(),a=k().length;return`
+      `:o.innerHTML=d.map(s=>re(s)).join("")}e.addEventListener("input",d=>{t=d.target.value,r()}),(y=document.getElementById("market-pet-picker-btn"))==null||y.addEventListener("click",()=>{W({title:"Buscar pet para comprar",selectedPetId:D,onSelect:d=>{D=d.id,p(),r()}})}),(g=document.getElementById("market-pet-clear-btn"))==null||g.addEventListener("click",()=>{D=null,p(),r()}),i.addEventListener("click",d=>{const s=d.target.closest(".filter-pill");s&&(i.querySelectorAll(".filter-pill").forEach(c=>c.classList.remove("active")),s.classList.add("active"),n=s.dataset.rarity,r())}),a.addEventListener("click",d=>{const s=d.target.closest(".filter-pill");s&&(a.querySelectorAll(".filter-pill").forEach(c=>c.classList.remove("active")),s.classList.add("active"),l=s.dataset.type,r())}),p()}const O=[{name:"Dog",fallback:"https://static.wikia.nocookie.net/adoptme/images/3/35/Dog.png/revision/latest/scale-to-width-down/168?cb=20260228184731"},{name:"Dragon",fallback:"https://static.wikia.nocookie.net/adoptme/images/3/3c/Dragon_Pet.png/revision/latest?cb=20210726173407"},{name:"Unicorn",fallback:"https://static.wikia.nocookie.net/adoptme/images/1/1f/Unicorn_Pet.png/revision/latest?cb=20250209082117"},{name:"Turtle",fallback:"https://static.wikia.nocookie.net/adoptme/images/3/3f/Turtle_In-game..png/revision/latest?cb=20210617223738"},{name:"Frost Dragon",fallback:"https://static.wikia.nocookie.net/adoptme/images/f/fd/Frost_Dragon_Pet.png/revision/latest?cb=20200116000126"},{name:"Shadow Dragon",fallback:"https://static.wikia.nocookie.net/adoptme/images/8/80/Shadow_Dragon_Gamepass_AM.png/revision/latest?cb=20201205093105"}].map(e=>{const i=f.find(a=>a.name===e.name);return{name:e.name,image:(i==null?void 0:i.image)||e.fallback}});function Ft(){const e=k().filter(o=>o.status==="active").slice(0,8),i=v(),a=k().length;return`
     <div class="container page-content animate-fade-up">
       <!-- Hero -->
       <div class="hero">
@@ -470,7 +511,7 @@
     <div class="auth-container animate-fade-up">
       <div class="auth-card">
         <div class="auth-logo">
-          <img src="/logo.png" alt="BananaStore">
+          <img src="/logo.png" alt="BananitaShop">
           <h2>Bienvenido de vuelta</h2>
           <p>Inicia sesión en tu cuenta</p>
         </div>
@@ -498,9 +539,9 @@
     <div class="auth-container animate-fade-up">
       <div class="auth-card">
         <div class="auth-logo">
-          <img src="/logo.png" alt="BananaStore">
+          <img src="/logo.png" alt="BananitaShop">
           <h2>Crear cuenta</h2>
-          <p>Únete a BananaStore.gg</p>
+          <p>Únete a BananitaShop</p>
         </div>
 
         <form id="register-form" onsubmit="return false">
@@ -715,7 +756,7 @@
         </div>
       </div>
     </div>
-  `}function Ot(){var l,t,p;b=[],w=[],me("your-search","your-dropdown","your"),me("their-search","their-dropdown","their"),(l=document.getElementById("your-picker-btn"))==null||l.addEventListener("click",()=>{W({title:"Selecciona un pet para tu oferta",onSelect:r=>F("your",r)})}),(t=document.getElementById("their-picker-btn"))==null||t.addEventListener("click",()=>{W({title:"Selecciona un pet para la otra oferta",onSelect:r=>F("their",r)})}),(p=document.getElementById("calc-reset"))==null||p.addEventListener("click",()=>{b=[],w=[],U(),m("Calculadora reiniciada","info")});const e=document.getElementById("catalog-rarity-filter"),i=document.getElementById("catalog-search"),a=document.getElementById("catalog-grid");let o="all";function n(){let r=f;const y=(i==null?void 0:i.value.trim().toLowerCase())||"";o!=="all"&&(r=r.filter(g=>g.rarity===o)),y&&(r=r.filter(g=>g.name.toLowerCase().includes(y)||g.category.toLowerCase().includes(y))),a.innerHTML=r.length?he(r):'<div class="empty-state" style="grid-column:1/-1"><p>No se encontraron pets.</p></div>'}e==null||e.addEventListener("click",r=>{const y=r.target.closest(".filter-pill");y&&(e.querySelectorAll(".filter-pill").forEach(g=>g.classList.remove("active")),y.classList.add("active"),o=y.dataset.rarity,n())}),i==null||i.addEventListener("input",n),a==null||a.addEventListener("click",r=>{var s,c,x;const y=r.target.closest("[data-pet-id]");if(!y)return;const g=f.find(B=>B.id===y.dataset.petId);if(!g)return;const d=document.getElementById("modal-overlay");d&&(d.innerHTML=`
+  `}function Ot(){var l,t,p;b=[],w=[],me("your-search","your-dropdown","your"),me("their-search","their-dropdown","their"),(l=document.getElementById("your-picker-btn"))==null||l.addEventListener("click",()=>{W({title:"Selecciona un pet para tu oferta",onSelect:r=>F("your",r)})}),(t=document.getElementById("their-picker-btn"))==null||t.addEventListener("click",()=>{W({title:"Selecciona un pet para la otra oferta",onSelect:r=>F("their",r)})}),(p=document.getElementById("calc-reset"))==null||p.addEventListener("click",()=>{b=[],w=[],U(),m("Calculadora reiniciada","info")});const e=document.getElementById("catalog-rarity-filter"),i=document.getElementById("catalog-search"),a=document.getElementById("catalog-grid");let o="all";function n(){let r=f;const y=(i==null?void 0:i.value.trim().toLowerCase())||"";o!=="all"&&(r=r.filter(g=>g.rarity===o)),y&&(r=r.filter(g=>g.name.toLowerCase().includes(y)||g.category.toLowerCase().includes(y))),a.innerHTML=r.length?he(r):'<div class="empty-state" style="grid-column:1/-1"><p>No se encontraron pets.</p></div>'}e==null||e.addEventListener("click",r=>{const y=r.target.closest(".filter-pill");y&&(e.querySelectorAll(".filter-pill").forEach(g=>g.classList.remove("active")),y.classList.add("active"),o=y.dataset.rarity,n())}),i==null||i.addEventListener("input",n),a==null||a.addEventListener("click",r=>{var s,c,x;const y=r.target.closest("[data-pet-id]");if(!y)return;const g=f.find(E=>E.id===y.dataset.petId);if(!g)return;const d=document.getElementById("modal-overlay");d&&(d.innerHTML=`
       <div class="modal">
         <div class="modal-header">
           <h3 class="modal-title">Anadir desde catalogo</h3>
@@ -867,7 +908,7 @@
         </div>
       </div>
     </div>
-  `}function zt(){const e=v();if(!e)return;const i=document.getElementById("profile-tabs");i&&i.addEventListener("click",t=>{const p=t.target.closest(".tab");if(!p)return;i.querySelectorAll(".tab").forEach(y=>y.classList.remove("active")),p.classList.add("active");const r=p.dataset.tab;document.querySelectorAll('[id^="tab-"]').forEach(y=>y.style.display="none"),document.getElementById("tab-"+r).style.display=""});const a=document.getElementById("profile-form");a&&(a.onsubmit=t=>{t.preventDefault();const p=document.getElementById("prof-username").value.trim(),r=document.getElementById("prof-email").value.trim(),y=document.getElementById("prof-bio").value.trim();if(!p||!r){m("Completa los campos obligatorios","warning");return}Q({username:p,email:r,bio:y,avatar:p.charAt(0).toUpperCase()}),m("Perfil actualizado ✓","success"),u("/profile")});const o=document.getElementById("password-form");o&&(o.onsubmit=t=>{t.preventDefault();const p=document.getElementById("sec-current").value,r=document.getElementById("sec-new").value,y=document.getElementById("sec-confirm").value;if(p!==e.password){m("Contraseña actual incorrecta","error");return}if(r.length<6){m("La nueva contraseña debe tener al menos 6 caracteres","warning");return}if(r!==y){m("Las contraseñas no coinciden","error");return}Q({password:r}),m("Contraseña actualizada ✓","success")});const n=document.getElementById("request-seller-btn");n&&(n.onclick=()=>{Ce({id:"sr_"+Date.now(),userId:e.id,username:e.username,email:e.email,status:"pending",createdAt:new Date().toISOString()}),m("¡Solicitud enviada! El equipo la revisará pronto","success"),u("/profile")});const l=document.getElementById("seller-settings-form");l&&(l.onsubmit=t=>{t.preventDefault();const p=document.getElementById("seller-paypal").value.trim(),r=document.getElementById("seller-yape").value.trim(),y=document.getElementById("seller-pin").value.trim();if(y&&(y.length!==6||!/^\d{6}$/.test(y))){m("El PIN debe ser exactamente 6 dígitos numéricos","warning");return}Q({paypalEmail:p,yapeNumber:r,sellerPin:y}),m("Configuración de vendedor guardada ✓","success")})}let ee=!1;const qt=["USD","EUR","GBP","MXN"];function Ut(){const e=v();if(!e)return u("/login"),"";if(!$e()&&!$())return u("/profile"),"";if(!ee&&!$()&&e.sellerPin)return jt();const i=k().filter(t=>t.sellerId===e.id),a=i.filter(t=>t.status==="active"),o=S().filter(t=>t.sellerId===e.id),n=o.filter(t=>t.status==="payment_sent"),l=o.filter(t=>t.status==="completed").reduce((t,p)=>t+p.amount,0);return`
+  `}function zt(){const e=v();if(!e)return;const i=document.getElementById("profile-tabs");i&&i.addEventListener("click",t=>{const p=t.target.closest(".tab");if(!p)return;i.querySelectorAll(".tab").forEach(y=>y.classList.remove("active")),p.classList.add("active");const r=p.dataset.tab;document.querySelectorAll('[id^="tab-"]').forEach(y=>y.style.display="none"),document.getElementById("tab-"+r).style.display=""});const a=document.getElementById("profile-form");a&&(a.onsubmit=t=>{t.preventDefault();const p=document.getElementById("prof-username").value.trim(),r=document.getElementById("prof-email").value.trim(),y=document.getElementById("prof-bio").value.trim();if(!p||!r){m("Completa los campos obligatorios","warning");return}Q({username:p,email:r,bio:y,avatar:p.charAt(0).toUpperCase()}),m("Perfil actualizado ✓","success"),u("/profile")});const o=document.getElementById("password-form");o&&(o.onsubmit=t=>{t.preventDefault();const p=document.getElementById("sec-current").value,r=document.getElementById("sec-new").value,y=document.getElementById("sec-confirm").value;if(p!==e.password){m("Contraseña actual incorrecta","error");return}if(r.length<6){m("La nueva contraseña debe tener al menos 6 caracteres","warning");return}if(r!==y){m("Las contraseñas no coinciden","error");return}Q({password:r}),m("Contraseña actualizada ✓","success")});const n=document.getElementById("request-seller-btn");n&&(n.onclick=()=>{Ce({id:"sr_"+Date.now(),userId:e.id,username:e.username,email:e.email,status:"pending",createdAt:new Date().toISOString()}),m("¡Solicitud enviada! El equipo la revisará pronto","success"),u("/profile")});const l=document.getElementById("seller-settings-form");l&&(l.onsubmit=t=>{t.preventDefault();const p=document.getElementById("seller-paypal").value.trim(),r=document.getElementById("seller-yape").value.trim(),y=document.getElementById("seller-pin").value.trim();if(y&&(y.length!==6||!/^\d{6}$/.test(y))){m("El PIN debe ser exactamente 6 dígitos numéricos","warning");return}Q({paypalEmail:p,yapeNumber:r,sellerPin:y}),m("Configuración de vendedor guardada ✓","success")})}let ee=!1;const qt=["USD","EUR","GBP","MXN"];function Ut(){const e=v();if(!e)return u("/login"),"";if(!$e()&&!S())return u("/profile"),"";if(!ee&&!S()&&e.sellerPin)return jt();const i=k().filter(t=>t.sellerId===e.id),a=i.filter(t=>t.status==="active"),o=B().filter(t=>t.sellerId===e.id),n=o.filter(t=>t.status==="payment_sent"),l=o.filter(t=>t.status==="completed").reduce((t,p)=>t+p.amount,0);return`
     <div class="container page-content animate-fade-up">
       <div class="flex-between mb-24">
         <div>
@@ -973,7 +1014,7 @@
                 <tr><th>Pedido</th><th>Pet</th><th>Comprador</th><th>Monto</th><th>Método</th><th>Estado</th><th>Acciones</th></tr>
               </thead>
               <tbody>
-                ${o.filter(t=>t.status!=="completed"&&t.status!=="cancelled").map(t=>{const p=G(t.buyerId),r=t.messages||[];return`
+                ${o.filter(t=>t.status!=="completed"&&t.status!=="cancelled").map(t=>{const p=$(t.buyerId),r=t.messages||[];return`
                     <tr>
                       <td class="text-sm text-muted">#${t.id.slice(-6)}</td>
                       <td>${t.petName}</td>
@@ -1033,7 +1074,7 @@
                 <tr><th>Pedido</th><th>Pet</th><th>Comprador</th><th>Monto</th><th>Fecha</th></tr>
               </thead>
               <tbody>
-                ${o.filter(t=>t.status==="completed").map(t=>{const p=G(t.buyerId);return`
+                ${o.filter(t=>t.status==="completed").map(t=>{const p=$(t.buyerId);return`
                     <tr>
                       <td class="text-sm text-muted">#${t.id.slice(-6)}</td>
                       <td>${t.petName}</td>
@@ -1056,7 +1097,7 @@
   `}function jt(){return`
     <div class="pin-container animate-fade-up">
       <div style="text-align:center">
-        <img src="/logo.png" alt="BananaStore" style="height:56px;margin:0 auto 16px">
+        <img src="/logo.png" alt="BananitaShop" style="height:56px;margin:0 auto 16px">
         <h2>Panel de Vendedor</h2>
         <p class="text-muted text-sm mb-8">Introduce tu PIN de 6 dígitos para acceder</p>
       </div>
@@ -1143,7 +1184,7 @@
         <h3>Selecciona un pet primero</h3>
         <p>Usa el catálogo para elegir el pet que quieres publicar.</p>
       </div>
-    `}function Vt(){const e=v();if(!e)return;if(!ee&&!$()&&e.sellerPin){const o=document.querySelectorAll(".pin-input"),n=document.getElementById("pin-form");if(o.length===0)return;const l=()=>{const t=Array.from(o).map(p=>p.value.trim()).join("");if(t.length!==6){const p=document.getElementById("pin-error");p.textContent="Completa los 6 dígitos",p.style.display="";return}if(Ae(t))ee=!0,u("/seller");else{const p=document.getElementById("pin-error");p.textContent="PIN incorrecto",p.style.display="",o.forEach(r=>{r.value="",r.style.borderColor="var(--pastel-red-text)"}),o[0].focus(),setTimeout(()=>{o.forEach(r=>r.style.borderColor="")},1500)}};o.forEach((t,p)=>{t.addEventListener("input",r=>{const y=r.target.value.replace(/\D/g,"");r.target.value=y,y&&p<5&&o[p+1].focus()}),t.addEventListener("keydown",r=>{r.key==="Backspace"&&!t.value&&p>0&&o[p-1].focus()})}),n&&(n.onsubmit=t=>{t.preventDefault(),l()}),o[0].focus();return}const i=document.getElementById("seller-tabs");i&&i.addEventListener("click",o=>{const n=o.target.closest(".tab");n&&(i.querySelectorAll(".tab").forEach(l=>l.classList.remove("active")),n.classList.add("active"),document.querySelectorAll('[id^="seller-tab-"]').forEach(l=>l.style.display="none"),document.getElementById("seller-tab-"+n.dataset.tab).style.display="")});const a=document.getElementById("add-pet-btn");a&&(a.onclick=()=>{window.marketplaceSelectedPet=null,W({title:"Selecciona el pet que quieres vender",onSelect:o=>{window.marketplaceSelectedPet=o,V("Agregar Pet al Marketplace",Pe()),be()}})}),document.querySelectorAll(".remove-listing-btn").forEach(o=>{o.onclick=()=>{const n=o.dataset.id;ke(n),m("Pet eliminada del marketplace","info"),u("/seller")}}),document.querySelectorAll(".confirm-payment-btn").forEach(o=>{o.onclick=()=>{const n=o.dataset.id;Y(n,{status:"completed",completedAt:new Date().toISOString()}),m("Pago confirmado. Venta completada","success"),u("/seller")}}),document.querySelectorAll(".seller-send-order-msg-btn").forEach(o=>{o.onclick=()=>{const n=o.dataset.id,l=document.getElementById(`seller-order-msg-${n}`),t=l==null?void 0:l.value.trim();if(!t)return;const p=S().find(y=>y.id===n);if(!p)return;const r=p.messages||[];r.push({sender:"seller",text:t,createdAt:new Date().toISOString()}),Y(n,{messages:r}),l.value="",m("Respuesta enviada al comprador","success"),u("/seller")}})}function be(){const e=document.getElementById("add-pet-form");if(!e)return;const i=v(),a=window.marketplaceSelectedPet,o=document.getElementById("back-to-pets-btn");o==null||o.addEventListener("click",()=>{z(),W({title:"Selecciona el pet que quieres vender",selectedPetId:(a==null?void 0:a.id)||null,onSelect:n=>{window.marketplaceSelectedPet=n,V("Agregar Pet al Marketplace",Pe()),be()}})}),e.onsubmit=n=>{n.preventDefault();const l=parseFloat(document.getElementById("pet-price").value);if(!l||l<=0){m("Introduce un precio válido","warning");return}const t=parseInt(document.getElementById("pet-quantity").value,10);if(!t||t<=0){m("Introduce una cantidad válida","warning");return}const p={id:"lst_"+te(),sellerId:i.id,petId:a.id,petName:a.name,rarity:a.rarity,age:document.getElementById("pet-age").value,currency:document.getElementById("pet-currency").value,quantity:t,price:l,isFly:document.getElementById("pet-fly").checked,isRide:document.getElementById("pet-ride").checked,isNeon:document.getElementById("pet-neon").checked,isMega:document.getElementById("pet-mega").checked,description:document.getElementById("pet-desc").value.trim(),status:"active",createdAt:new Date().toISOString()};we(p),i.preferredCurrency=p.currency,z(),m("Pet publicada exitosamente","success"),u("/seller")}}function Jt(e){const i=e[0],a=ae(i),o=v();if(!a)return`
+    `}function Vt(){const e=v();if(!e)return;if(!ee&&!S()&&e.sellerPin){const o=document.querySelectorAll(".pin-input"),n=document.getElementById("pin-form");if(o.length===0)return;const l=()=>{const t=Array.from(o).map(p=>p.value.trim()).join("");if(t.length!==6){const p=document.getElementById("pin-error");p.textContent="Completa los 6 dígitos",p.style.display="";return}if(Ae(t))ee=!0,u("/seller");else{const p=document.getElementById("pin-error");p.textContent="PIN incorrecto",p.style.display="",o.forEach(r=>{r.value="",r.style.borderColor="var(--pastel-red-text)"}),o[0].focus(),setTimeout(()=>{o.forEach(r=>r.style.borderColor="")},1500)}};o.forEach((t,p)=>{t.addEventListener("input",r=>{const y=r.target.value.replace(/\D/g,"");r.target.value=y,y&&p<5&&o[p+1].focus()}),t.addEventListener("keydown",r=>{r.key==="Backspace"&&!t.value&&p>0&&o[p-1].focus()})}),n&&(n.onsubmit=t=>{t.preventDefault(),l()}),o[0].focus();return}const i=document.getElementById("seller-tabs");i&&i.addEventListener("click",o=>{const n=o.target.closest(".tab");n&&(i.querySelectorAll(".tab").forEach(l=>l.classList.remove("active")),n.classList.add("active"),document.querySelectorAll('[id^="seller-tab-"]').forEach(l=>l.style.display="none"),document.getElementById("seller-tab-"+n.dataset.tab).style.display="")});const a=document.getElementById("add-pet-btn");a&&(a.onclick=()=>{window.marketplaceSelectedPet=null,W({title:"Selecciona el pet que quieres vender",onSelect:o=>{window.marketplaceSelectedPet=o,V("Agregar Pet al Marketplace",Pe()),be()}})}),document.querySelectorAll(".remove-listing-btn").forEach(o=>{o.onclick=()=>{const n=o.dataset.id;ke(n),m("Pet eliminada del marketplace","info"),u("/seller")}}),document.querySelectorAll(".confirm-payment-btn").forEach(o=>{o.onclick=()=>{const n=o.dataset.id;Y(n,{status:"completed",completedAt:new Date().toISOString()}),m("Pago confirmado. Venta completada","success"),u("/seller")}}),document.querySelectorAll(".seller-send-order-msg-btn").forEach(o=>{o.onclick=()=>{const n=o.dataset.id,l=document.getElementById(`seller-order-msg-${n}`),t=l==null?void 0:l.value.trim();if(!t)return;const p=B().find(y=>y.id===n);if(!p)return;const r=p.messages||[];r.push({sender:"seller",text:t,createdAt:new Date().toISOString()}),Y(n,{messages:r}),l.value="",m("Respuesta enviada al comprador","success"),u("/seller")}})}function be(){const e=document.getElementById("add-pet-form");if(!e)return;const i=v(),a=window.marketplaceSelectedPet,o=document.getElementById("back-to-pets-btn");o==null||o.addEventListener("click",()=>{z(),W({title:"Selecciona el pet que quieres vender",selectedPetId:(a==null?void 0:a.id)||null,onSelect:n=>{window.marketplaceSelectedPet=n,V("Agregar Pet al Marketplace",Pe()),be()}})}),e.onsubmit=n=>{n.preventDefault();const l=parseFloat(document.getElementById("pet-price").value);if(!l||l<=0){m("Introduce un precio válido","warning");return}const t=parseInt(document.getElementById("pet-quantity").value,10);if(!t||t<=0){m("Introduce una cantidad válida","warning");return}const p={id:"lst_"+te(),sellerId:i.id,petId:a.id,petName:a.name,rarity:a.rarity,age:document.getElementById("pet-age").value,currency:document.getElementById("pet-currency").value,quantity:t,price:l,isFly:document.getElementById("pet-fly").checked,isRide:document.getElementById("pet-ride").checked,isNeon:document.getElementById("pet-neon").checked,isMega:document.getElementById("pet-mega").checked,description:document.getElementById("pet-desc").value.trim(),status:"active",createdAt:new Date().toISOString()};we(p),i.preferredCurrency=p.currency,z(),m("Pet publicada exitosamente","success"),u("/seller")}}function Jt(e){const i=e[0],a=ae(i),o=v();if(!a)return`
       <div class="container page-content">
         <div class="empty-state">
           <h3>Pet no encontrada</h3>
@@ -1151,7 +1192,7 @@
           <button class="btn btn-primary mt-16" onclick="window.location.hash='/marketplace'">Volver al Marketplace</button>
         </div>
       </div>
-    `;const n=f.find(r=>r.id===a.petId),l=G(a.sellerId),t=o?ie(o.id).includes(a.id):!1,p=[];return a.isFly&&p.push('<span class="badge badge-fly">Fly</span>'),a.isRide&&p.push('<span class="badge badge-ride">Ride</span>'),a.isNeon&&p.push('<span class="badge badge-neon">Neon</span>'),a.isMega&&p.push('<span class="badge badge-mega">Mega Neon</span>'),`
+    `;const n=f.find(r=>r.id===a.petId),l=$(a.sellerId),t=o?ie(o.id).includes(a.id):!1,p=[];return a.isFly&&p.push('<span class="badge badge-fly">Fly</span>'),a.isRide&&p.push('<span class="badge badge-ride">Ride</span>'),a.isNeon&&p.push('<span class="badge badge-neon">Neon</span>'),a.isMega&&p.push('<span class="badge badge-mega">Mega Neon</span>'),`
     <div class="container page-content animate-fade-up" style="max-width:900px;margin:0 auto">
       <button class="btn btn-ghost mb-16" onclick="window.location.hash='/marketplace'">
         Volver al Marketplace
@@ -1227,7 +1268,7 @@
         </div>
       </div>
     </div>
-  `}function Zt(e){const i=e[0],a=ae(i),o=v();if(!a||!o)return;const n=document.getElementById("fav-btn");n&&(n.onclick=()=>{De(o.id,a.id),m("Favorito actualizado","info"),u("/pet/"+i)});const l=document.getElementById("buy-btn");l&&(l.onclick=()=>{const t=G(a.sellerId),p=(t==null?void 0:t.paypalEmail)||"",r=f.find(g=>g.id===a.petId),y=`
+  `}function Zt(e){const i=e[0],a=ae(i),o=v();if(!a||!o)return;const n=document.getElementById("fav-btn");n&&(n.onclick=()=>{De(o.id,a.id),m("Favorito actualizado","info"),u("/pet/"+i)});const l=document.getElementById("buy-btn");l&&(l.onclick=()=>{const t=$(a.sellerId),p=(t==null?void 0:t.paypalEmail)||"",r=f.find(g=>g.id===a.petId),y=`
         <div>
           <div class="text-center mb-24">
             ${r&&r.image?`<img src="${r.image}" style="width:64px;height:64px;object-fit:contain;margin:0 auto" onerror="this.style.display='none'">`:""}
@@ -1302,7 +1343,7 @@
           </button>
           <p class="text-xs text-muted text-center mt-8" id="confirm-hint">El vendedor confirmará tu pago manualmente</p>
         </div>
-      `;V("Completar Compra",y),setTimeout(()=>{const g=document.querySelectorAll("#payment-methods .payment-method");g.forEach(s=>{s.onclick=()=>{g.forEach(c=>c.classList.remove("selected")),s.classList.add("selected"),document.getElementById("paypal-section").style.display=s.dataset.method==="paypal"?"":"none",document.getElementById("qr-section").style.display=s.dataset.method==="qr"?"":"none",document.getElementById("yape-section").style.display=s.dataset.method==="yape"?"":"none"}});const d=document.getElementById("paypal-send-button");if(d&&p){const s=a.price.toFixed(2),c=a.currency||"USD",x=encodeURIComponent(a.petName),B=encodeURIComponent(p);d.href=`https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=${B}&item_name=${x}&amount=${s}&currency_code=${c}`,d.textContent="Pagar con PayPal"}document.getElementById("confirm-purchase-btn").onclick=()=>{var se,pe;const s=((se=document.querySelector(".payment-method.selected"))==null?void 0:se.dataset.method)||"paypal",c=(pe=document.getElementById("payment-chat-message"))==null?void 0:pe.value.trim(),x=document.getElementById("payment-proof-input"),B=J=>{const I={id:"ord_"+te(),buyerId:o.id,sellerId:a.sellerId,listingId:a.id,petId:a.petId,petName:a.petName,quantity:1,amount:a.price,currency:a.currency||"USD",paymentMethod:s,status:"payment_sent",createdAt:new Date().toISOString(),messages:c?[{sender:"buyer",text:c,createdAt:new Date().toISOString()}]:[],paymentProof:J||null};xe(I);const de=Math.max(0,(a.quantity||1)-1);Me(a.id,{quantity:de,status:de>0?"active":"sold"}),z(),m("Pago notificado. El vendedor verificará tu pago pronto","success"),u("/orders")};if(x&&x.files.length>0){const J=x.files[0],I=new FileReader;I.onload=()=>B(I.result),I.readAsDataURL(J)}else B(null)}},100)})}function Qt(){const e=v();if(!e)return u("/login"),"";const i=S().filter(n=>n.buyerId===e.id),a=i.filter(n=>n.status!=="completed"&&n.status!=="cancelled"),o=i.filter(n=>n.status==="completed");return`
+      `;V("Completar Compra",y),setTimeout(()=>{const g=document.querySelectorAll("#payment-methods .payment-method");g.forEach(s=>{s.onclick=()=>{g.forEach(c=>c.classList.remove("selected")),s.classList.add("selected"),document.getElementById("paypal-section").style.display=s.dataset.method==="paypal"?"":"none",document.getElementById("qr-section").style.display=s.dataset.method==="qr"?"":"none",document.getElementById("yape-section").style.display=s.dataset.method==="yape"?"":"none"}});const d=document.getElementById("paypal-send-button");if(d&&p){const s=a.price.toFixed(2),c=a.currency||"USD",x=encodeURIComponent(a.petName),E=encodeURIComponent(p);d.href=`https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=${E}&item_name=${x}&amount=${s}&currency_code=${c}`,d.textContent="Pagar con PayPal"}document.getElementById("confirm-purchase-btn").onclick=()=>{var se,pe;const s=((se=document.querySelector(".payment-method.selected"))==null?void 0:se.dataset.method)||"paypal",c=(pe=document.getElementById("payment-chat-message"))==null?void 0:pe.value.trim(),x=document.getElementById("payment-proof-input"),E=J=>{const I={id:"ord_"+te(),buyerId:o.id,sellerId:a.sellerId,listingId:a.id,petId:a.petId,petName:a.petName,quantity:1,amount:a.price,currency:a.currency||"USD",paymentMethod:s,status:"payment_sent",createdAt:new Date().toISOString(),messages:c?[{sender:"buyer",text:c,createdAt:new Date().toISOString()}]:[],paymentProof:J||null};xe(I);const de=Math.max(0,(a.quantity||1)-1);Me(a.id,{quantity:de,status:de>0?"active":"sold"}),z(),m("Pago notificado. El vendedor verificará tu pago pronto","success"),u("/orders")};if(x&&x.files.length>0){const J=x.files[0],I=new FileReader;I.onload=()=>E(I.result),I.readAsDataURL(J)}else E(null)}},100)})}function Qt(){const e=v();if(!e)return u("/login"),"";const i=B().filter(n=>n.buyerId===e.id),a=i.filter(n=>n.status!=="completed"&&n.status!=="cancelled"),o=i.filter(n=>n.status==="completed");return`
     <div class="container page-content animate-fade-up" style="max-width:900px;margin:0 auto">
       <h1 style="font-size:1.8rem;margin-bottom:24px">Mis Pedidos 📦</h1>
 
@@ -1313,7 +1354,7 @@
 
       <!-- Active Orders -->
       <div id="orders-tab-active">
-        ${a.length>0?a.map(n=>{const l=f.find(y=>y.id===n.petId),t=G(n.sellerId),r={pending_payment:{label:"Esperando pago",class:"badge-info"},payment_sent:{label:"Pago enviado — Verificando",class:"badge-warning"},confirmed:{label:"Confirmado",class:"badge-success"}}[n.status]||{label:n.status,class:"badge-info"};return`
+        ${a.length>0?a.map(n=>{const l=f.find(y=>y.id===n.petId),t=$(n.sellerId),r={pending_payment:{label:"Esperando pago",class:"badge-info"},payment_sent:{label:"Pago enviado — Verificando",class:"badge-warning"},confirmed:{label:"Confirmado",class:"badge-success"}}[n.status]||{label:n.status,class:"badge-info"};return`
             <div class="card mb-12">
               <div class="card-body flex gap-16" style="align-items:center">
                 ${l&&l.image?`<img src="${l.image}" style="width:48px;height:48px;object-fit:contain;flex-shrink:0" onerror="this.style.display='none'">`:""}
@@ -1378,7 +1419,7 @@
         `}
       </div>
     </div>
-  `}function Yt(){const e=document.getElementById("orders-tabs");e&&e.addEventListener("click",i=>{const a=i.target.closest(".tab");a&&(e.querySelectorAll(".tab").forEach(o=>o.classList.remove("active")),a.classList.add("active"),document.querySelectorAll('[id^="orders-tab-"]').forEach(o=>o.style.display="none"),document.getElementById("orders-tab-"+a.dataset.tab).style.display="")}),document.querySelectorAll(".send-order-msg-btn").forEach(i=>{i.onclick=()=>{const a=i.dataset.id,o=document.getElementById(`order-msg-${a}`),n=o==null?void 0:o.value.trim();if(!n)return;const l=S().find(p=>p.id===a);if(!l)return;const t=l.messages||[];t.push({sender:"buyer",text:n,createdAt:new Date().toISOString()}),Y(a,{messages:t}),o.value="",m("Mensaje enviado al vendedor","success"),u("/orders")}})}function Xt(){const e=v();if(!e)return u("/login"),"";const a=ie(e.id).map(o=>ae(o)).filter(Boolean);return`
+  `}function Yt(){const e=document.getElementById("orders-tabs");e&&e.addEventListener("click",i=>{const a=i.target.closest(".tab");a&&(e.querySelectorAll(".tab").forEach(o=>o.classList.remove("active")),a.classList.add("active"),document.querySelectorAll('[id^="orders-tab-"]').forEach(o=>o.style.display="none"),document.getElementById("orders-tab-"+a.dataset.tab).style.display="")}),document.querySelectorAll(".send-order-msg-btn").forEach(i=>{i.onclick=()=>{const a=i.dataset.id,o=document.getElementById(`order-msg-${a}`),n=o==null?void 0:o.value.trim();if(!n)return;const l=B().find(p=>p.id===a);if(!l)return;const t=l.messages||[];t.push({sender:"buyer",text:n,createdAt:new Date().toISOString()}),Y(a,{messages:t}),o.value="",m("Mensaje enviado al vendedor","success"),u("/orders")}})}function Xt(){const e=v();if(!e)return u("/login"),"";const a=ie(e.id).map(o=>ae(o)).filter(Boolean);return`
     <div class="container page-content animate-fade-up" style="max-width:900px;margin:0 auto">
       <h1 style="font-size:1.8rem;margin-bottom:24px">Mis Favoritos</h1>
       
@@ -1407,12 +1448,12 @@
         </div>
       `}
     </div>
-  `}function er(){if(!$())return u("/"),"";const e=C(),i=k(),a=S(),o=L(),n=Re(),l=Be(),t=o.filter(r=>r.status==="pending"),p=a.filter(r=>r.status==="completed").reduce((r,y)=>r+y.amount,0);return`
+  `}function er(){if(!S())return u("/"),"";const e=C(),i=k(),a=B(),o=L(),n=Re(),l=Be(),t=o.filter(r=>r.status==="pending"),p=a.filter(r=>r.status==="completed").reduce((r,y)=>r+y.amount,0);return`
     <div class="container page-content animate-fade-up">
       <div class="flex-between mb-24">
         <div>
           <h1 style="font-size:1.8rem">Panel de Administración</h1>
-          <p class="text-sm text-muted">Control total de BananaStore.gg</p>
+          <p class="text-sm text-muted">Control total de BananitaShop</p>
         </div>
       </div>
 
@@ -1609,7 +1650,7 @@
             <form id="config-form" onsubmit="return false">
               <div class="form-group">
                 <label class="form-label">Nombre del sitio</label>
-                <input type="text" class="form-input" id="cfg-name" value="${l.siteName||"BananaStore.gg"}">
+                <input type="text" class="form-input" id="cfg-name" value="${l.siteName||"BananitaShop"}">
               </div>
               <div class="form-group">
                 <label class="form-label">Comisión (%)</label>
@@ -1635,7 +1676,7 @@
         </div>
       </div>
     </div>
-  `}function or(){if(!$())return;const e=document.getElementById("admin-tabs");e&&e.addEventListener("click",a=>{const o=a.target.closest(".tab");o&&(e.querySelectorAll(".tab").forEach(n=>n.classList.remove("active")),o.classList.add("active"),document.querySelectorAll('[id^="admin-tab-"]').forEach(n=>n.style.display="none"),document.getElementById("admin-tab-"+o.dataset.tab).style.display="")}),document.querySelectorAll(".approve-seller-btn").forEach(a=>{a.onclick=()=>{const o=a.dataset.id,n=a.dataset.userId,l=L(),t=l.findIndex(p=>p.id===o);t!==-1&&(l[t].status="approved",X(l)),ye(n,{role:"seller",sellerApproved:!0}),m("Vendedor aprobado ✓","success"),u("/admin")}}),document.querySelectorAll(".reject-seller-btn").forEach(a=>{a.onclick=()=>{const o=a.dataset.id,n=L(),l=n.findIndex(t=>t.id===o);l!==-1&&(n[l].status="rejected",X(n)),m("Solicitud rechazada","info"),u("/admin")}}),document.querySelectorAll(".toggle-ban-btn").forEach(a=>{a.onclick=()=>{const o=a.dataset.id,n=a.dataset.banned==="true";ye(o,{banned:!n}),m(n?"Usuario desbaneado":"Usuario baneado","info"),u("/admin")}}),document.querySelectorAll(".admin-remove-listing").forEach(a=>{a.onclick=()=>{const o=k().filter(n=>n.id!==a.dataset.id);j(o),m("Listing eliminado","info"),u("/admin")}});const i=document.getElementById("config-form");i&&(i.onsubmit=a=>{a.preventDefault(),Ee({siteName:document.getElementById("cfg-name").value.trim(),commission:parseFloat(document.getElementById("cfg-commission").value)||0,announcement:document.getElementById("cfg-announcement").value.trim(),maintenanceMode:document.getElementById("cfg-maintenance").checked}),m("Configuración guardada ✓","success")})}function ar(){const e=v();return`
+  `}function or(){if(!S())return;const e=document.getElementById("admin-tabs");e&&e.addEventListener("click",a=>{const o=a.target.closest(".tab");o&&(e.querySelectorAll(".tab").forEach(n=>n.classList.remove("active")),o.classList.add("active"),document.querySelectorAll('[id^="admin-tab-"]').forEach(n=>n.style.display="none"),document.getElementById("admin-tab-"+o.dataset.tab).style.display="")}),document.querySelectorAll(".approve-seller-btn").forEach(a=>{a.onclick=()=>{const o=a.dataset.id,n=a.dataset.userId,l=L(),t=l.findIndex(p=>p.id===o);t!==-1&&(l[t].status="approved",X(l)),ye(n,{role:"seller",sellerApproved:!0}),m("Vendedor aprobado ✓","success"),u("/admin")}}),document.querySelectorAll(".reject-seller-btn").forEach(a=>{a.onclick=()=>{const o=a.dataset.id,n=L(),l=n.findIndex(t=>t.id===o);l!==-1&&(n[l].status="rejected",X(n)),m("Solicitud rechazada","info"),u("/admin")}}),document.querySelectorAll(".toggle-ban-btn").forEach(a=>{a.onclick=()=>{const o=a.dataset.id,n=a.dataset.banned==="true";ye(o,{banned:!n}),m(n?"Usuario desbaneado":"Usuario baneado","info"),u("/admin")}}),document.querySelectorAll(".admin-remove-listing").forEach(a=>{a.onclick=()=>{const o=k().filter(n=>n.id!==a.dataset.id);j(o),m("Listing eliminado","info"),u("/admin")}});const i=document.getElementById("config-form");i&&(i.onsubmit=a=>{a.preventDefault(),Ee({siteName:document.getElementById("cfg-name").value.trim(),commission:parseFloat(document.getElementById("cfg-commission").value)||0,announcement:document.getElementById("cfg-announcement").value.trim(),maintenanceMode:document.getElementById("cfg-maintenance").checked}),m("Configuración guardada ✓","success")})}function ar(){const e=v();return`
     <div class="container page-content animate-fade-up" style="max-width:900px;margin:0 auto">
       <div class="text-center mb-32">
         <h1 style="font-size:2rem">Centro de Soporte</h1>
@@ -1807,8 +1848,8 @@
       <nav class="navbar">
         <div class="navbar-inner">
           <a class="navbar-brand" onclick="window.location.hash='/'">
-            <img src="/logo.png" alt="BananaStore">
-            <span>BananaStore.gg</span>
+            <img src="/logo.png" alt="BananitaShop">
+            <span>BananitaShop</span>
           </a>
         </div>
       </nav>

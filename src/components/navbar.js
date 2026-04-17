@@ -45,12 +45,43 @@ export function renderNavbar() {
                 Registrarse
               </button>
             </div>
-          ` : ''}
+          ` : `
+            <div class="mobile-user-menu">
+              <div class="mobile-user-header">
+                <div class="navbar-avatar">${user.avatar || user.username.charAt(0).toUpperCase()}</div>
+                <span>${user.username}</span>
+              </div>
+              <div class="dropdown-item" onclick="window.closeMobileNav();window.location.hash='/profile'">
+                <i class="ri ri-user-line"></i> Mi Perfil
+              </div>
+              ${user.role === 'seller' || user.role === 'both' || user.role === 'admin' ? `
+                <div class="dropdown-item" onclick="window.closeMobileNav();window.location.hash='/seller'">
+                  <i class="ri ri-store-line"></i> Panel Vendedor
+                </div>
+              ` : ''}
+              <div class="dropdown-item" onclick="window.closeMobileNav();window.location.hash='/orders'">
+                <i class="ri ri-shopping-bag-line"></i> Mis Pedidos
+              </div>
+              <div class="dropdown-item" onclick="window.closeMobileNav();window.location.hash='/favorites'">
+                <i class="ri ri-heart-line"></i> Favoritos
+              </div>
+              ${isAdmin() ? `
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item" onclick="window.closeMobileNav();window.location.hash='/admin'">
+                  <i class="ri ri-settings-3-line"></i> Admin Panel
+                </div>
+              ` : ''}
+              <div class="dropdown-divider"></div>
+              <div class="dropdown-item danger" onclick="window.closeMobileNav();window.BS_LOGOUT()">
+                <i class="ri ri-logout-box-line"></i> Cerrar Sesion
+              </div>
+            </div>
+          `}
         </div>
 
         <div class="navbar-actions">
           ${user ? `
-            <div class="navbar-user" id="nav-user-btn" onclick="document.getElementById('nav-dropdown').classList.toggle('show')">
+            <div class="navbar-user" id="nav-user-btn" onclick="window.innerWidth<=768?document.getElementById('nav-links').classList.toggle('open'):document.getElementById('nav-dropdown').classList.toggle('show')">
               <div class="navbar-avatar">${user.avatar || user.username.charAt(0).toUpperCase()}</div>
               <span class="navbar-username">${user.username}</span>
               <div class="navbar-dropdown" id="nav-dropdown">
